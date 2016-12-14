@@ -1,0 +1,22 @@
+
+  <div class="row">
+    <table class="table table-striped">
+      <tr>
+        <td>
+          {{ctrl.todo.text}}
+        </td>
+        <td>
+          {{ctrl.todo.toDate | date:'dd.MM.yyyy'}}
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger btn-xs"
+                  ng-click="ctrl.delete()">Delete</button>
+        </td>
+        <td ng-hide="ctrl.todo.state == ctrl.todoStates.alreadyDone">
+          <button type="button" class="btn btn-success btn-xs"
+                  ng-click="ctrl.done()">Done</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+

@@ -1,0 +1,44 @@
+.blue_theme .header * {
+  color: #fffff9;
+}
+.blue_theme .header .active {
+  color: #fffff9;
+}
+.blue_theme .header .navbar-brand {
+  color: #fffff9;
+}
+.blue_theme .header .navbar-nav {
+  color: #4a729c;
+}
+.blue_theme .header .navbar {
+  background: #454545;
+  border-radius: 4px;
+  margin: auto;
+}
+.blue_theme .header .red_radio {
+  background: darkred;
+  color: #fffff9;
+}
+.blue_theme .header .blue_radio {
+  background: #5B83AD;
+  color: #fffff9;
+}
+.blue_theme body {
+  background: #fffff9;
+  color: #6c94be;
+}
+.blue_theme body a {
+  color: #5B83AD;
+}
+.blue_theme body .form-control {
+  border: 3px solid #5B83AD;
+  margin-bottom: 1em;
+}
+.blue_theme h1,
+.blue_theme h2,
+.blue_theme h3,
+.blue_theme h4,
+.blue_theme h5,
+.blue_theme h6 {
+  color: #6c94be;
+}

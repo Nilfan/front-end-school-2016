@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="todolist not-done">
+        <h1>Todos</h1>
+
+        <input type="text" class="form-control add-todo"
+               placeholder="Введите текста задания..."
+               ng-model="ctrl.newTodo.text">
+
+        <input type="text" class="form-control"
+               placeholder="Введите дату окончания..."
+               ng-model="ctrl.newTodo.toDate" name="date"
+               data-date-format="dd.MM.yyyy" bs-datepicker>
+
+        <button class="btn btn-success" ng-click="ctrl.addTodo()">Добавить</button>
+        <button class="btn" ng-click="ctrl.GetTodos()">Запросить todos</button>
+        <hr>
+        <h2>Нужно сделать:</h2>
+        <todo ng-repeat="todo in ctrl.todos |
+        filter:{state:ctrl.todoStates.pending}" todo="todo"
+              on-delete="ctrl.onDelete()"></todo>
+
+        <hr>
+        <h2>Сделано:</h2>
+        <todo ng-repeat="todo in ctrl.todos |
+        filter:{state:ctrl.todoStates.alreadyDone}" todo="todo"
+              on-delete="ctrl.onDelete()"></todo>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
